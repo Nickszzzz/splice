@@ -1,12 +1,13 @@
 import React from 'react'
 import Logo from '../components/Logo'
 import Button from '../components/Button'
+import {HiMenuAlt3} from 'react-icons/hi'
 
 const Header = () => {
 
   return (
     <div className='navigation grid grid-cols-2 gap-x-10'>
-      <div className='flex gap-x-20 justify-start items-center'>
+      <div className='flex gap-x-20 justify-start items-center gap-y-4 flex-wrap'>
         <Logo />
         <nav>
             <ul className='flex gap-x-8 justifyt-start'>
@@ -18,9 +19,12 @@ const Header = () => {
             </ul>
         </nav>
       </div>
-      <div className='flex justify-end'>
+      <div className='flex justify-end items-start header-button'>
             <Button>Log In</Button>
             <Button type="primary">Sign Up</Button>
+      </div>
+      <div className="responsive-menu">
+        <HiMenuAlt3 />
       </div>
     </div>
   )

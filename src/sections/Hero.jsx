@@ -6,8 +6,8 @@ import Button from '../components/Button';
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="hero-wrapper grid grid-cols-12 gap-x-10">
-        <div className="col-start-1 col-end-6 flex items-center justify-center">
+      <div className="hero-wrapper gap-x-10">
+        <div className="flex items-center justify-center">
           <div className="container">
           <h1
             style={{
@@ -19,7 +19,7 @@ const Hero = () => {
           <Button type="secondary">Sign Up</Button>
           </div>
         </div>
-        <div className="col-end-13 col-span-7">
+        <div className="">
           <img src={heroClip} alt="" />
         </div>
       </div>

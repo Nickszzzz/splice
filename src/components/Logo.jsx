@@ -3,7 +3,7 @@ import splice from '../assets/images/splice.svg';
 
 const Logo = () => {
   return (
-    <figure>
+    <figure className='logo'>
         <img src={splice} alt="" />
     </figure>
   )
