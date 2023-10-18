@@ -2,7 +2,8 @@ import React from 'react'
 import Logo from '../components/Logo'
 import Button from '../components/Button'
 
-const Navigation = () => {
+const Header = () => {
+
   return (
     <div className='navigation grid grid-cols-2 gap-x-10'>
       <div className='flex gap-x-20 justify-start items-center'>
@@ -25,4 +26,4 @@ const Navigation = () => {
   )
 }
 
-export default Navigation
+export default Header

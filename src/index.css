@@ -20,6 +20,7 @@
 
 * {
   font-family: var(--font-family);
+  transition: 0.3s;
 }
 
 header {
@@ -30,6 +31,12 @@ header {
   position: fixed;
   left: 0;
   right: 0;
+}
+header:is(.scroll) {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 header nav ul li {
   display: inline-block;
@@ -152,14 +159,44 @@ body {
   margin: auto;
 }
 .sounds .container p {
-  text-align: center;
-  color: var(--headline-color);
+  color: rgba(96, 96, 96, 0.5);
   font-family: var(--font-family);
-  font-size: 13px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: normal;
-  margin-bottom: 33px;
+  text-align: center;
+}
+.sounds .container p.content {
+  color: #958A8A;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 171%; /* 30.78px */
+  width: 55%;
+}
+.sounds .container h3 {
+  text-align: center;
+  color: #272727;
+  font-family: var(--font-family);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 108%; /* 51.84px */
+}
+.sounds .container h3 b {
+  color: #03F;
+  font-family: var(--font-family);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 108%;
+}
+.sounds .container figure {
+  width: 75%;
+  margin: 5rem;
 }
 
 @keyframes slide-in-fwd-tr {

@@ -1,23 +1,20 @@
 import React from 'react'
-import image1 from '../assets/images/image 1.png'
-import image2 from '../assets/images/image 2.png'
-import image3 from '../assets/images/image 3.png'
-import image4 from '../assets/images/image 4.png'
-import image5 from '../assets/images/image 5.png'
+import Button from '../components/Button'
+import sound_image from '../assets/images/sounds.png'
 
 const Sounds = () => {
-    const images = [image1, image2, image3, image4, image5];
   return (
-    <div className='features'>
-      <div className="container">
+    <div className='sounds'>
+      <div className="container flex items-center flex-col">
         <p>SOUNDS</p>
-        <div className="flex justify-center gap-20 items-center">
-            {
-                images.map(item => (
-                    <img src={item} />
-                ))
-            }
-        </div>
+        <h3>Find your <b>sound</b></h3>
+        <p className="content">
+        Preview and download millions of royalty-free samples from top producers, artists, and sound designers. Available on desktop, web, and mobile.
+        </p>
+        <Button type="secondary">TRY SOUNDS</Button>
+        <figure>
+          <img src={sound_image} alt="" />
+          </figure>
       </div>
     </div>
   )
