@@ -3,6 +3,8 @@ import Header from './sections/Header';
 import Hero from './sections/Hero';
 import Features from './sections/Features';
 import Sounds from './sections/Sounds';
+import Plugins from './sections/Plugins';
+import About from './sections/About';
 
 const App = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -35,6 +37,8 @@ const App = () => {
         <Hero />
         <Features />
         <Sounds />
+        <Plugins />
+        <About />
       </main>
       <footer></footer>
     </>
