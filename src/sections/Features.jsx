@@ -11,7 +11,7 @@ const Features = () => {
     <div className='features'>
       <div className="container">
         <p>FEATURED IN</p>
-        <div className="flex justify-center gap-20 items-center">
+        <div className="flex justify-center flex-wrap gap-20 items-center">
             {
                 images.map(item => (
                     <img src={item} />

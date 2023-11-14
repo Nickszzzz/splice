@@ -337,6 +337,10 @@ body {
                 font-weight: 100;
                 line-height: 171%; /* 30.78px */
                 width: 55%;
+
+                @media (max-width: 1000px) {
+                    width: 100%;
+                }
             }
         }
 
@@ -361,7 +365,11 @@ body {
 
         figure {
             width: 75%;
-            margin: 5rem
+            margin: 5rem;
+
+            @media (max-width: 1000px) {
+                    width: 100%;
+            }
         }
     }
 }
@@ -396,8 +404,25 @@ main {
     padding-left: var(--padding-left);
     padding-right: var(--padding-right);
     
+    @media (max-width: 1300px) {
+        column-gap: 3rem;
+    }
+
+    @media (max-width: 768px) {
+        height: auto;
+        margin-top: -5rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
     &:is(.flex) {
         display: flex;
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            row-gap: 3rem;
+        }
 
         > div {
             
@@ -407,6 +432,11 @@ main {
                 flex-basis: calc(100% / 2);
                 display: flex;
                 align-items: center;
+
+                @media (max-width: 768px) {
+                    flex-basis: 100%;
+                    order: 2;
+                }
 
                 .logos-holder {
                     position: relative;
@@ -433,8 +463,16 @@ main {
                 flex-basis: calc(100% / 2);
                 display: flex;
             align-items: center;
+
+            @media (max-width: 768px) {
+                    flex-basis: 100%;
+                }
                 > div {
                     width: 58%;
+
+                    @media (max-width: 1300px) {
+                        width: 100%;
+    }
                 }
     
                 h3 {
@@ -485,7 +523,11 @@ main {
         height: auto;
         padding-top: 5rem;
         padding-bottom: 15rem;
-
+ @media (max-width: 768px) {
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            row-gap: 3rem;
+        }
 
         > div {
             
@@ -495,7 +537,10 @@ main {
                 flex-basis: calc(100% / 2);
                 display: flex;
                 align-items: center;
-
+ @media (max-width: 768px) {
+                    flex-basis: 100%;
+                    order: 2;
+                }
                 .logos-holder {
                     position: relative;
 
@@ -523,6 +568,14 @@ main {
             align-items: center;
                 > div {
                     width: 58%;
+
+                    @media (max-width: 768px) {
+                    flex-basis: 100%;
+                }
+                }
+
+                @media (max-width: 768px) {
+                    flex-basis: 100%;
                 }
     
                 h3 {
@@ -572,6 +625,10 @@ main {
     padding-left: var(--padding-left);
     background-color: #0C0C0C;
     position: relative;
+
+    @media (max-width: 768px) {
+            
+        }
     .grid {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -580,8 +637,23 @@ main {
         grid-row-gap: 0px;
         column-gap: 3rem;
 
+        @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
         .grid-4 {
             grid-area: 1 / 1 / 2 / 5;
+
+            @media (max-width: 768px) {
+            grid-area: 1 / 1 / 2 / 2;
+            padding-right: var(--padding-right);
+            padding-top: var(--padding-top);
+            padding-bottom: var(--padding-bottom);
+        }
             display: flex;
             align-items: center;
             h3 {
@@ -627,7 +699,9 @@ main {
 
         .grid-8 {
             grid-area: 1 / 5 / 2 / 13;
-
+ @media (max-width: 768px) {
+            grid-area: 2 / 1 / 3 / 2;
+        }
             img {
                 width: 100%;
                 margin-top: -12rem;
